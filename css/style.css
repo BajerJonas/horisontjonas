@@ -1,0 +1,213 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html {
+    font-family: "Oswald";
+}
+.bagved {
+    display: none;
+}
+.nav {
+    border-bottom: 0px solid #EAEAEB;
+    text-align: right;
+    height: 60px;
+    line-height: 70px;
+    background: lightgreen;
+}
+#logo {
+    position: absolute;
+        width: 126px;
+        background: #CF6;
+        padding: 1px 2px 2px 4px;
+    }
+.menu {
+    margin: 0 30px 0px 0;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    line-height: 35px;
+}
+
+span {
+    color: #54D17A;
+}
+
+label {
+    font-size: 16px;
+    line-height: 35px;
+    display: none;
+    width: 26px;
+}
+
+#toggle {
+    display: none;
+}
+main {
+    background: #F5F3EE;
+}
+h1 {
+    margin: 0px 0px 20px 0px;
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Oswald";
+}
+
+p {
+    font-family: "Prototype";
+    margin: 0px 0px 16px 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0px 50px 0px 50px;
+}
+
+.udvalg {
+    border: 2px solid;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    border: 3px solid;
+    width: 560px;
+}
+
+.item h2 {
+    float: right;
+    margin: 5px;
+    text-align: center;
+    font-family: "pacifico";
+}
+
+.item h4 {
+    text-align: center;
+    color: lightseagreen;
+    margin: 5px;
+}
+
+.item h3 {
+    margin: 7px;
+
+}
+
+.bestilknap {
+    margin: 5px;
+}
+
+.rejsetype {
+    width: 225px;
+}
+
+.billede {
+    width: 390px;
+}
+
+@media only screen and (max-width: 560px) {
+    body {
+        background: #F5F3EE;
+    }
+    .bagved {
+        margin: 0;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+    }
+    .nav {
+        position: static;
+    }
+    #logo {
+        position: fixed;
+        right: 0;
+        width: 126px;
+        background: #CF6;
+        padding: 1px 2px 2px 4px;
+    }
+    label {
+        display: block;
+        position: fixed;
+        cursor: pointer;
+        background: white;
+        padding-right: 11px;
+        z-index: 1;
+    }
+    .menu {
+        text-align: center;
+        width: 150px;
+        display: none;
+        position: fixed;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+        background: lightblue;
+        font-size: 13px;
+        margin-left: 37px;
+    }
+    .menu a:hover {
+        background: #CEE3F6;
+    }
+    label:hover {
+        background: #CEE3F6;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    h1 {
+        margin-top: 36%;
+        padding: 2px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        border: 5px solid lightcoral;
+    }
+    .udvalg {
+        border: 2px solid;
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .item {
+        border: 3px solid;
+        width: 100%;
+    }
+    .item h2 {
+        float: none;
+        margin: 5px;
+        text-align: center;
+        font-family: "pacifico";
+    }
+    .item h4 {
+        text-align: center;
+        color: lightseagreen;
+        margin: 5px;
+    }
+    
+    .billede {
+        width: 100%;
+        border-bottom: 5px solid black;
+    }
+}
+
+
+}
